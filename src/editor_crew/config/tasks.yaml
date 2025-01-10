@@ -1,0 +1,44 @@
+# src/article_workflow/config/tasks.yaml
+writing_task:
+  description: >
+    Write a comprehensive article about {topic}.
+    Ensure the content is engaging, informative, and well-structured.
+    Consider the target audience and maintain appropriate tone and depth.
+  expected_output: >
+    A well-structured article in markdown format, covering key aspects of {topic}
+    with clear sections, engaging content, and accurate information.
+  agent: content_writer
+  output_file: original_article.md
+
+critique_task:
+  description: >
+    Analyze the article about {topic} for content quality, accuracy, and engagement.
+    Provide specific feedback on strengths and areas for improvement.
+    Consider structure, clarity, depth, and overall effectiveness.
+  expected_output: >
+    A detailed critique document highlighting specific strengths and weaknesses,
+    with actionable suggestions for improvement.
+  agent: content_critic
+  output_file: article_critique.md
+
+editing_task:
+  description: >
+    Improve the article based on provided critique while maintaining original voice.
+    Address all identified issues and implement suggested improvements.
+    Ensure changes enhance rather than alter the original message.
+  expected_output: >
+    An improved version of the article incorporating critical feedback
+    while maintaining the original voice and intent.
+  agent: content_editor
+  output_file: improved_article.md
+
+rating_task:
+  description: >
+    Evaluate the final article on a 5-point scale across multiple criteria:
+    accuracy, clarity, engagement, structure, and overall impact.
+    Provide detailed justification for each rating component.
+  expected_output: >
+    A comprehensive rating report with scores for each criterion,
+    detailed justifications, and an overall rating out of 5.
+  agent: content_rater
+  output_file: article_rating.md
