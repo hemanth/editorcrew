@@ -1,6 +1,12 @@
 # EditorCrew
 > EditorCrew is an AI Agent Crew that makes use of multiple model providers to generate polished articles.
 
+
+## Demo 
+
+<video src="https://github.com/user-attachments/assets/a1da76bf-719b-4d05-a158-820bbcf32654"></video>
+
+
 ## 🤖 Model Architecture
 
 EditorCrew leverages four powerful LLMs, each specialized for different aspects of content creation:
